@@ -1,0 +1,39 @@
+---
+permalink: /404.html
+---
+<html>
+<head>
+    <style>
+        html {
+            background: url('./chaosreigns.gif') 400px 250px repeat;
+        }
+
+        * {
+            font-family: 'Comic Sans', 'Comic Sans MS', script
+        }
+
+        h1 {
+            font-size: 64px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="marquee">This "page" not "found"</h1>
+
+    <script>
+        function putVideo() {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('width', 560)
+            iframe.setAttribute('height', 315)
+            iframe.setAttribute('src', 'https://www.youtube.com/embed/Vmn9asN-8AE?autoplay=1&loop=1')
+            iframe.setAttribute('frameborder', 0)
+            iframe.setAttribute('allowfullscreen', true)
+            document.body.appendChild(iframe)
+        }
+        for(var i=0; i<7; i++) {
+            setTimeout(putVideo, i*500)
+        }
+    </script>
+</body>
+</html>
